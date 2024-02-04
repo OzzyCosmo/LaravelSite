@@ -1,0 +1,14 @@
+# Ignore all files and directories that start with "tmp
+tmp*
+
+# Include the file "config.ini" in the build context
+!config.ini
+
+# Exclude the directory "logs" and its contents
+logs/
+
+# Exclude all files and directories in the "docs" directory, but include the directory itself
+/docs/**
+
+# Exclude all files and directories that end with ".log"
+*.log
