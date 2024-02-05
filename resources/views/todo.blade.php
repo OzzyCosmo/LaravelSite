@@ -12,6 +12,14 @@
 <br>
 - Weather Alerts and Other Alerts
 <br>
+- Quote of the day at the bottom of the home page. There are APIs for this.
+<br>
+- MySQL or SQLite as database
+<br>
+- Add "beta features" to the website in the other stuff page
+<br>
+- Integrate a site-wide dark mode
+<br>
 <br>
 <a href="{{route('home')}}">
 <button>
