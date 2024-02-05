@@ -20,6 +20,8 @@
 <br>
 - Integrate a site-wide dark mode
 <br>
+- You can use "API Ninjas", a site that supplies loads of free APIs
+<br>
 <br>
 <a href="{{route('home')}}">
 <button>
