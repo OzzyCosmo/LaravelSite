@@ -35,6 +35,43 @@
     </div>
     <hr class="h-px bg-gray-200 border-0 dark:bg-gray-700">
 
+    <?php
+    
+    // Replace with your actual API key
+    $apiKey = 'd3710fa280eba08edb2744b7b049b9cc';
+    
+    // Set the API endpoint URL
+    $apiUrl = 'https://api.api-ninjas.com/v1/facts';
+    
+    // Initialize a cURL session
+    $curl = curl_init($apiUrl);
+    
+    // Set cURL options
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl, CURLOPT_HTTPHEADER, ['X-Api-Key: ' . $apiKey]);
+    
+    // Execute the cURL request
+    $response = curl_exec($curl);
+    
+    // Check for errors
+    if ($response === false) {
+        $error = curl_error($curl);
+        echo "Error: $error";
+    } else {
+        // Decode the JSON response
+        $data = json_decode($response, true);
+    
+        // Print the response data
+        echo '<pre>';
+        print_r($data);
+        echo '</pre>';
+    }
+    
+    // Close the cURL session
+    curl_close($curl);
+    
+    ?>
+
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style class="rounded-">
