@@ -20,7 +20,7 @@
 <br>
 - You can use "API Ninjas", a site that supplies loads of free APIs
 <br>
-- IMPORTANT: Create SQLite database
+- IMPORTANT: Create SQLite database (Check the Eloquant API)
 <br>
 <br>
 <a href="{{route('home')}}">

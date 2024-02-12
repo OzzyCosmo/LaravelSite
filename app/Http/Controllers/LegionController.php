@@ -5,19 +5,14 @@ namespace App\Http\Controllers;
 use App\Models\Legion;
 use Illuminate\Http\Request;
 
-class OtherStuffController extends Controller
+class LegionController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-
-        $legions = Legion::all();
-
-        return view('other-stuff', [
-            'legions' => $legions
-        ]);
+        return Legion::all();
     }
 
     /**
@@ -39,9 +34,9 @@ class OtherStuffController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Legion $legion)
     {
-        //
+        return $legion;
     }
 
     /**

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+// use App\Models\Legion;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
@@ -25,9 +26,12 @@ class HomeController extends Controller
 
         $date = Carbon::now();
 
+        // $legions = Legion::all();
+
         return view('home', [
             'data' => $data,
             'date' => $date,
+            // 'legions' => $legions
         ]);
     }
 
