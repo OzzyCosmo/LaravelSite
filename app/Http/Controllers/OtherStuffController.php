@@ -31,21 +31,29 @@ class OtherStuffController extends Controller
 
         $limit = "1";
         $X_Api_Key = 'IFv/y6DAfE4fPj/4El73Ww==mNpuKKu3yPhVOKkD';
-        $ApiURL = "https://api.api-ninjas.com/v1/jokes?limit={$limit}" . $X_Api_Key;
-        $jokesApiResponse = Http::get($ApiURL);
+        $ApiURL = "https://api.api-ninjas.com/v1/jokes?limit={$limit}&ap_key=" . $X_Api_Key;
+        // $jokesApiResponse = Http::get($ApiURL);
 
         // $jokesApiResponse = Http::get($ApiURL, [
         //     'headers' => [
         //         'X-Api-Key' => 'IFv/y6DAfE4fPj/4El73Ww==mNpuKKu3yPhVOKkD',
         //     ]
         // ]);
-        // $jokesApiResponse = $jokesApiResponse->body();
-        // $jokesApiResponse = json_decode($jokesApiResponse);
+        
+        $jokesApiResponse = Http::withHeaders([
+            'X-Api-Key' => 'IFv/y6DAfE4fPj/4El73Ww==mNpuKKu3yPhVOKkD',
+        ])->get($ApiURL);
+
+        $jokeData = json_decode($jokesApiResponse->body());
+
+        $joke = $jokeData[0]->joke;
+
+        // dd($joke);
 
         return view('other-stuff', [
             'data' => $data,
             'date' => $date,
-            'randomJoke' => $jokesApiResponse,
+            'randomJoke' => $joke,
             'legions' => $legions
         ]);
     }
