@@ -90,6 +90,10 @@
 
     </body>
 
+    <div class="ml-8">This (beta) feature accesses a Random Rhyme API from API-Ninjas and then displays it on the site.</div>
+
+    <p class="ml-8 mt-2">{{ $randomJoke }}</p>
+
     <div class="container flex flex-col ...">
         <div class="fixed bottom-0 left-0 right-0">
             <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4">
