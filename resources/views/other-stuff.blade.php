@@ -76,6 +76,8 @@
             <div class="ml-3 mt-1 text-white text-sm">BETA FEATURES</div>
         </div>
 
+        <div class="mt-2 ml-8">Features that are in beta meaning that they are WIP and haven't been added to the site yet.</div>
+
         <div class="mt-2 ml-8">This (beta) feature accesses the site database, retrieving and displaying information on
             Warhammer 30k Legions. It specifically extracts and presents the legions along with their designated colors.
         </div>
