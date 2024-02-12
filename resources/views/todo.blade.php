@@ -26,8 +26,12 @@
     <br>
     - IMPORTANT: Create SQLite database (Check the Eloquant API)
     <br>
+    - IMPORTANT: An alert for high wind speeds (and similar stuff) with the openweathermap API. It can be displayed ontop/under the navigation buttons.
     <br>
-    <p class="text-red-600">- IMPORTANT: Create a form that you can add Space Marine legions to the legion database in
+    - IMPORTANT: Figure out how to add Javascript
+    <br>
+    <br>
+    <p class="text-red-600">- IMPORTANT: Create a form so that you can add Space Marine legions to the legion database in
         the server.</p>
     <br>
     <br>
