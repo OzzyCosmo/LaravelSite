@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use Carbon\Carbon;
 use App\Models\Legion;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 
 class OtherStuffController extends Controller
 {
@@ -13,9 +15,23 @@ class OtherStuffController extends Controller
     public function index()
     {
 
+        $apiKey = "d3710fa280eba08edb2744b7b049b9cc";
+        $cityId = "2657832";
+        $googleApiUrl = "http://api.openweathermap.org/data/2.5/weather?id=" . $cityId . "&lang=en&units=metric&APPID=" . $apiKey;
+
+        $response = Http::get($googleApiUrl);
+
+        $data = $response->body();
+        
+        $data = json_decode($response);
+
+        $date = Carbon::now();
+
         $legions = Legion::all();
 
         return view('other-stuff', [
+            'data' => $data,
+            'date' => $date,
             'legions' => $legions
         ]);
     }

@@ -14,6 +14,30 @@
             <h2 class="">Welcome to my Site.</h2>
         </div>
 
+        <div class="flex flex-col">
+
+            <div class="flex gap-4 mr-14">
+                <div>
+                    <div>{{ $date->format('l g:i a') }}</div>
+                    <div>{{ $date->format('jS F, Y') }}</div>
+                    <div class="uppercase font-semibold">{{ $data->weather[0]->description }}</div>
+                </div>
+                <div>
+                    <div class="space-x-2">
+                        <span class="text-green-500"> {{ $data->main->temp_max }}°C</span>
+                        <span class="text-red-500">{{ $data->main->temp_min }}°C</span>
+                    </div>
+                    <div class="">Humidity: {{ $data->main->humidity }} %</div>
+                    <div>Wind: {{ $data->wind->speed }} km/h</div>
+                </div>
+                <div class="flex justify-center items-center">
+                    <img class="" src="https://openweathermap.org/img/w/{{ $data->weather[0]->icon }}.png" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+
     </div>
     <hr class="h-px bg-gray-200 border-0 dark:bg-gray-700">
     <a href="{{ route('home') }}">
@@ -52,7 +76,9 @@
             <div class="ml-3 mt-1 text-white text-sm">BETA FEATURES</div>
         </div>
 
-        <div class="mt-2 ml-8">This (beta) feature accesses the site database, retrieving and displaying information on Warhammer 30k Legions. It specifically extracts and presents the legions along with their designated colors.</div>
+        <div class="mt-2 ml-8">This (beta) feature accesses the site database, retrieving and displaying information on
+            Warhammer 30k Legions. It specifically extracts and presents the legions along with their designated colors.
+        </div>
 
 
         {{-- Legions --}}
