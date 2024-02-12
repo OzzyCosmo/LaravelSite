@@ -4,8 +4,7 @@
 
 
 <div class="ml-5 mt-3">
-    <h1>Todo List</h1>
-    <br>
+    <h1 class="ml-2 mb-2">Todo List</h1>
     - Integrate ChatGPT into the site
     <br>
     - Eventually make a way to let ChatGPT edit the site? Could make the output of ChatGPT detectable by a script that
