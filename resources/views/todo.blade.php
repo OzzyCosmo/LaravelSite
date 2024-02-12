@@ -30,6 +30,8 @@
     <br>
     - IMPORTANT: Figure out how to add Javascript
     <br>
+    - IMPORTANT: Optimize mobile experience, especially on the other-stuff page
+    <br>
     <br>
     <p class="text-red-600">- IMPORTANT: Create a form so that you can add Space Marine legions to the legion database in
         the server.</p>
