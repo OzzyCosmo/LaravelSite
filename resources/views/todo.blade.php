@@ -32,9 +32,13 @@
     <br>
     - IMPORTANT: Optimize mobile experience, especially on the other-stuff page
     <br>
+    - Make a seperate site or add pages to this that are similar to Google's Gemini and Google Deepmind website
+    <br>
     <br>
     <p class="text-red-600">- IMPORTANT: Create a form so that you can add Space Marine legions to the legion database in
         the server.</p>
+    <br>
+    
     <br>
     <br>
     <a href="{{ route('home') }}">
