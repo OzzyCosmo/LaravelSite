@@ -56,6 +56,12 @@
             Todo
         </button>
     </a>
+    <a href="{{ route('legion-manager') }}">
+        <button
+            class="ml-6 mt-2 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-0.5 px-4 border border-blue-500 hover:border-transparent rounded">
+            Legion-Manager
+        </button>
+    </a>
     </div>
     <hr class="h-px bg-gray-200 border-0 dark:bg-gray-700">
 
@@ -76,7 +82,8 @@
             <div class="ml-3 mt-1 text-white text-sm">BETA FEATURES</div>
         </div>
 
-        <div class="mt-2 ml-8">Features that are in beta meaning that they are WIP and haven't been added to the site yet.</div>
+        <div class="mt-2 ml-8">Features that are in beta meaning that they are WIP and haven't been added to the site
+            yet.</div>
 
         <div class="mt-2 ml-8">This (beta) feature accesses the site database, retrieving and displaying information on
             Warhammer 30k Legions. It specifically extracts and presents the legions along with their designated colors.
@@ -92,7 +99,8 @@
 
     </body>
 
-    <div class="ml-8">This (beta) feature accesses a Random Rhyme API from API-Ninjas and then displays it on the site.</div>
+    <div class="ml-8">This (beta) feature accesses a Random Rhyme API from API-Ninjas and then displays it on the
+        site.</div>
 
     <p class="ml-8 mt-2 text-blue-700">{{ $randomJoke }}</p>
 

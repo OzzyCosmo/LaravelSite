@@ -1,4 +1,4 @@
-<form method="POST" action="/legion/new">
+{{-- <form method="POST" action="/legion/new">
     @csrf
 
     <div>
@@ -21,4 +21,4 @@
         <button>Submit</button>
     </div>
 
-</form>
+</form> --}}
