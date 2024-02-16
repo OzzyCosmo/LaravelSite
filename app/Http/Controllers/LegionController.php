@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\LegionRequest;
 use App\Models\Legion;
 use Illuminate\Http\Request;
 
@@ -20,15 +21,20 @@ class LegionController extends Controller
      */
     public function create()
     {
-        //
+        return view('legion-create');
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(LegionRequest $request)
     {
-        //
+        $legion = Legion::create([
+            'name' => $request->name,
+            'colour' => $request->colour,
+        ]);
+
+        return '<h1 style="color:' . $legion->colour . '">' . $legion->name . ' Stored!</h1>';
     }
 
     /**
