@@ -14,23 +14,9 @@ class LegionManagerController extends Controller
      */
     public function index()
     {
-        $apiKey = "d3710fa280eba08edb2744b7b049b9cc";
-        $cityId = "2657832";
-        $googleApiUrl = "http://api.openweathermap.org/data/2.5/weather?id=" . $cityId . "&lang=en&units=metric&APPID=" . $apiKey;
-
-        $response = Http::get($googleApiUrl);
-
-        $data = $response->body();
-        
-        $data = json_decode($response);
-
-        $date = Carbon::now();
-
         $legions = Legion::all();
 
         return view('legion-manager', [
-            'data' => $data,
-            'date' => $date,
             'legions' => $legions
         ]);
     }

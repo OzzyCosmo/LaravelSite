@@ -34,7 +34,7 @@ class LegionController extends Controller
             'colour' => $request->colour,
         ]);
 
-        return '<h1 style="color:' . $legion->colour . '">' . $legion->name . ' Stored!</h1>';
+        return redirect('legion-manager');
     }
 
     /**
