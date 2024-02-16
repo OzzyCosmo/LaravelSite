@@ -34,6 +34,8 @@ Route::get('/dashboard', function () {
 
 Route::get('/legion/new', [LegionController::class, 'create'])->name('legion.create');
 Route::post('/legion/new', [LegionController::class, 'store'])->name('legion.store');
+Route::delete('/legion/{legion}', [LegionController::class, 'destroy'])->name('legion.destroy');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
