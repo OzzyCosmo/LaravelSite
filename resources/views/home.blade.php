@@ -3,7 +3,8 @@
 <head>
     <title>My Site</title>
     <link rel="stylesheet" type="text/css" href="index.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="bg-cyan-100 font-sans">
     <div class="flex justify-between px-8 py-8">
