@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\OtherStuffController;
+use App\Http\Controllers\LegionManagerController;
 use App\Http\Controllers\TodoController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\HomeController;
@@ -21,6 +22,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/otherstuff', [OtherStuffController::class, 'index'])->name('other-stuff');
+
+Route::get('/legion-manager', [LegionManagerController::class, 'index'])->name('legion-manager');
 
 Route::get('/todo', [TodoController::class, 'index'])->name('todo');
 
