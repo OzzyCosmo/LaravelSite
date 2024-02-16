@@ -59,7 +59,7 @@
     <a href="{{ route('legion-manager') }}">
         <button
             class="ml-6 mt-2 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-0.5 px-4 border border-blue-500 hover:border-transparent rounded">
-            Legion-Manager
+            Legion Manager
         </button>
     </a>
     </div>
