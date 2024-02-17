@@ -34,6 +34,7 @@
     <br>
     - Make a seperate site or add pages to this that are similar to Google's Gemini and Google Deepmind website
     <br>
+    - Add a section to the Legion Manager where I can view the date added/uploaded of the Legion
     <br>
     <p class="text-red-600">- IMPORTANT: Create a form so that you can add Space Marine legions to the legion database in
         the server.</p>

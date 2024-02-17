@@ -21,7 +21,7 @@ class HomeController extends Controller
         $response = Http::get($googleApiUrl);
 
         $data = $response->body();
-        
+
         $data = json_decode($response);
 
         $date = Carbon::now();
