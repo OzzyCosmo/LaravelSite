@@ -36,7 +36,8 @@
     <br>
     - Add a section to the Legion Manager where I can view the date added/uploaded of the Legion
     <br>
-    <p class="text-red-600">- IMPORTANT: Create a form so that you can add Space Marine legions to the legion database in
+    <br>
+    <p class="text-green-600">- IMPORTANT: Create a form so that you can add Space Marine legions to the legion database in
         the server.</p>
     <br>
     

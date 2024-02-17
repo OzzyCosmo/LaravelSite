@@ -3,7 +3,7 @@
     
     <div class="w-full max-w-lg space-y-6">
         <h1 class="font-bold text-2xl">
-            Legion Manager
+            Legion Manager (V1)
         </h1>
 
         <div class="flex justify-between items-center">
