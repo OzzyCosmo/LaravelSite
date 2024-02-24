@@ -28,11 +28,13 @@
 
 </div>
 
-<hr class="h-px bg-gray-200 border-0 dark:bg-gray-700">
-<button
-    class="mb-2 ml-8 mt-2 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-0.5 px-4 border border-blue-500 hover:border-transparent rounded">
-    Home
-</button>
+<a href="{{ route('home') }}">
+    <hr class="h-px bg-gray-200 border-0 dark:bg-gray-700">
+    <button
+        class="mb-2 ml-8 mt-2 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-0.5 px-4 border border-blue-500 hover:border-transparent rounded">
+        Home
+    </button>
+</a>
 <a href="{{ route('other-stuff') }}">
     <button
         class="ml-6 mt-2 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-0.5 px-4 border border-blue-500 hover:border-transparent rounded">
