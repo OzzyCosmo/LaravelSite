@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\LegionRequest;
+use App\Http\Requests\UpdateLegionRequest;
 use App\Models\Legion;
 use Illuminate\Http\Request;
 
@@ -48,17 +49,23 @@ class LegionController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Legion $legion)
     {
-        //
+        return view('legion-edit', [
+            'legion' => $legion,
+        ]);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(UpdateLegionRequest $request, Legion $legion)
     {
-        //
+        $legion->name = $request->name;
+        $legion->colour = $request->colour;
+        $legion->save();
+
+        return redirect('legion-manager');
     }
 
     /**

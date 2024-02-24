@@ -6,6 +6,7 @@ use App\Http\Controllers\TodoController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LegionController;
+use App\Http\Controllers\AICentreController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,6 +25,8 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/otherstuff', [OtherStuffController::class, 'index'])->name('other-stuff');
 
+Route::get('/ai-centre', [AICentreController::class, 'index'])->name('ai-centre');
+
 Route::get('/legion-manager', [LegionManagerController::class, 'index'])->name('legion-manager');
 
 Route::get('/todo', [TodoController::class, 'index'])->name('todo');
@@ -35,7 +38,8 @@ Route::get('/dashboard', function () {
 Route::get('/legion/create', [LegionController::class, 'create'])->name('legion.create');
 Route::post('/legion/new', [LegionController::class, 'store'])->name('legion.store');
 Route::delete('/legion/{legion}', [LegionController::class, 'destroy'])->name('legion.destroy');
-
+Route::get('/legion/{legion}/edit', [LegionController::class, 'edit'])->name('legion.edit');
+Route::put('/legion/{legion}', [LegionController::class, 'update'])->name('legion.update');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
