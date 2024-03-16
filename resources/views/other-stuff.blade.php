@@ -85,7 +85,7 @@
         <div class="mt-2 ml-8">Features that are in beta meaning that they are WIP and haven't been added to the site
             yet.</div>
 
-        <div class="mt-2 ml-8">This (beta) feature accesses the site database, retrieving and displaying information on
+        <div class="mt-2 ml-8">This feature accesses the site database, retrieving and displaying information on
             Warhammer 30k Legions. It specifically extracts and presents the legions along with their designated colors.
         </div>
 
@@ -99,7 +99,7 @@
 
     </body>
 
-    <div class="ml-8">This (beta) feature accesses a Random Rhyme API from API-Ninjas and then displays it on the
+    <div class="ml-8">This feature accesses a Random Rhyme API from API-Ninjas and then displays it on the
         site.</div>
 
     <p class="ml-8 mt-2 text-blue-700">{{ $randomJoke }}</p>
